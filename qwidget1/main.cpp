@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
   button->setText("Quit");
   QObject::connect(button, SIGNAL(clicked()), &app, SLOT(quit()));
 
-  QHBoxLayout *layout = new QHBoxLayout;
+  QVBoxLayout *layout = new QVBoxLayout;
   layout->addWidget(dial);
   layout->addWidget(button);
   window->setLayout(layout);
