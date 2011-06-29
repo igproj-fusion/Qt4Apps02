@@ -3,17 +3,19 @@
 
 #include <QWidget>
 
+QT_BEGIN_NAMESPACE
 class QSlider;
 class QSpinBox;
 class QLineEdit;
 class QPushButton;
+QT_END_NAMESPACE
 
 class myWidget : public QWidget
 {
-  Q_OBJECT_GETSTATICMETAOBJECT
+  Q_OBJECT
 public:
   myWidget(QWidget *parent = 0);
-private slots:
+public slots:
   void updateSliderPressed();
   void updateSliderMoved();
   void updateSliderReleased();

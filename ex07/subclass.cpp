@@ -1,5 +1,5 @@
-#include "subclass.h"
 #include <QtGui>
+#include "subclass.h"
 
 myWidget::myWidget(QWidget *parent) : QWidget(parent)
 {
