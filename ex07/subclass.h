@@ -3,12 +3,10 @@
 
 #include <QWidget>
 
-QT_BEGIN_NAMESPACE
 class QSlider;
 class QSpinBox;
 class QLineEdit;
 class QPushButton;
-QT_END_NAMESPACE
 
 class myWidget : public QWidget
 {

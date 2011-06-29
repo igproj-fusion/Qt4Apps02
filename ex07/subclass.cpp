@@ -18,7 +18,7 @@ myWidget::myWidget(QWidget *parent) : QWidget(parent)
   connect(sbox,SIGNAL(valueChanged(int)),slider,SLOT(setValue(int)));
 
   connect(slider,SIGNAL(sliderPressed()),this,SLOT(updateSliderPressed()));
-  connect(slider,SIGNAL(sliderMoved()),this,SLOT(updateSliderMoved()));
+  connect(slider,SIGNAL(sliderMoved(int)),this,SLOT(updateSliderMoved()));
   connect(slider,SIGNAL(sliderReleased()),this,SLOT(updateSliderReleased()));
   connect(button,SIGNAL(clicked()),this,SLOT(clear()));
 
@@ -38,7 +38,7 @@ void myWidget::updateSliderPressed()
 
 void myWidget::updateSliderMoved()
 {
-  edit->setText("Slider Move");
+  edit->setText("Slider Moving");
 }
 
 void myWidget::updateSliderReleased()
